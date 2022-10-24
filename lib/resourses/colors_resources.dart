@@ -1,0 +1,11 @@
+import 'package:flutter/material.dart';
+
+const Color HOME_PAGE_BACKGROUND_ONE = Color.fromRGBO(17, 17, 17, 1);
+const Color MAIN_SCREEN_INFO_TAB_GRADIENT_1 = Color.fromRGBO(217, 217, 217, 0.25);
+const Color MAIN_SCREEN_INFO_TAB_GRADIENT_2 =Color.fromRGBO(68, 68, 68, 0.5);
+const Color MAIN_SCREEN_INFO_TEXT_COLOR = Color.fromRGBO(85, 85, 85, 1);
+const Color MAIN_SCREEN_INFO_TAB_ACTIVE_BUTTON_COLOR = Color.fromRGBO(0, 255, 106, 1);
+const Color MAIN_SCREEN_INFO_TAB_INACTIVE_BUTTON_COLOR = Color.fromRGBO(136, 136, 136, 1);
+const Color MAIN_SCREEN_UNSELECTED_BOTTOM_BAR_COLOR = Color.fromRGBO(136, 136, 136, 1);
+const Color MAIN_SCREEN_SELECTED_BOTTOM_BAR_COLOR = Color.fromRGBO(0, 255, 106, 1);
+const Color MAIN_SCREEN_BANNER_DOTS_INDICATOR_INACTIVE = Color.fromRGBO(50, 50, 50, 1);
