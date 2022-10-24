@@ -53,9 +53,9 @@ import 'package:movie_booking_app/wigets/terms_and_condition.dart';
 //import 'package:movie_booking_app/user_target_pages/search_coming_soon_page.dart';
 //import 'package:movie_booking_app/user_target_pages/search_now_showing_page.dart';
 
-void main() async{
-
+void main() async {
   await Hive.initFlutter();
+
   /// register
   Hive.registerAdapter(PaDcSignInDataVOAdapter());
   Hive.registerAdapter(CityVOAdapter());
@@ -77,7 +77,6 @@ void main() async{
   Hive.registerAdapter(CinemaVOAdapter());
   Hive.registerAdapter(GetCinemasAndDayTimeSlotsResponseAdapter());
 
-
   /// box opening
   await Hive.openBox<PaDcSignInDataVO>(BOX_NAME_PADC_SIGN_IN_DATA_VO);
   await Hive.openBox<CityVO>(BOX_NAME_CITY_VO);
@@ -90,13 +89,15 @@ void main() async{
   await Hive.openBox<SnackCategoryVO>(BOX_NAME_SNACK_CATEGORY_VO);
   await Hive.openBox<SnackVO>(BOX_NAME_SNACK_ITEM_VO);
   await Hive.openBox<CinemaVO>(BOX_NAME_CINEMA_VO);
-  await Hive.openBox<GetCinemasAndDayTimeSlotsResponse>(BOX_NAME_GET_CINEMA_TIMESLOT_RESPONSE);
+  await Hive.openBox<GetCinemasAndDayTimeSlotsResponse>(
+      BOX_NAME_GET_CINEMA_TIMESLOT_RESPONSE);
 
   MovieBookingModelImpl().getCinemaDetail();
   MovieBookingModelImpl().getTimeSlotConfig();
 
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -104,7 +105,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Movie Booking App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
